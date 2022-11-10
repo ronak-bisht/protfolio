@@ -337,6 +337,9 @@ header {
     .service + .service {
         margin-left: 2em;
     }
+
+  
+
 }
 
 
@@ -391,15 +394,32 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 2rem;
+    column-gap: 6rem;
+    
+    
 }
 
 .portfolio__item {
     /* background: var(--clr-accent); */
+    /* background-color: var(--clr-light); */
+    /* background-color: #c9faf2; */
+    /* border: var(--clr-light) 3px solid; */
+    /* padding: 2em; */
+    border-radius: 10px;
+    /* box-shadow: 0.25em 0.25em 0.75em rgb(255, 255, 255); */
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .portfolio__img {
+    /* background-color: pink; */
+    
+    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25);
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
@@ -414,6 +434,21 @@ header {
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
     opacity: .5;
+}
+
+a{
+    color: var(--clr-light);
+    text-decoration: none;
+
+}
+.about-project{
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 800px) {
+ .portfolio{
+    grid-template-columns: repeat(1,1fr);
+ }
 }
 
 
