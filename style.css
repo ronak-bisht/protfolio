@@ -15,7 +15,8 @@
     
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent:#ee7155;
+    /* --clr-accent: #16e0bd; */
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -351,6 +352,9 @@ header {
 .about-me__img {
     box-shadow: var(--bs);
 }
+.certificate{
+    margin-top: 2em;
+}
 
 @media (min-width: 600px) {
     .about-me {
@@ -425,6 +429,11 @@ header {
         opacity 250ms linear;
 }
 
+.portfolio a:nth-child(3n-2){
+    border: var(--clr-accent) solid 3px;
+    padding: 0.3em;
+}
+
 .portfolio__item:focus {
     position: relative;
     z-index: 2;
@@ -449,6 +458,10 @@ a{
  .portfolio{
     grid-template-columns: repeat(1,1fr);
  }
+ .portfolio a:nth-child(n){
+    border: var(--clr-accent) solid 3px;
+    padding: 0.3em;
+}
 }
 
 
