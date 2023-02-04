@@ -8,10 +8,18 @@ h1{
     font-size: 3.6rem;
 }
 h2{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 h3{
-    font-size: 2rem;
+    font-size: 1.6rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+p{
+    font-size: 0.9rem;
+    line-height: 2em;
+    color: rgb(73, 75, 76);
 }
 a{
     text-decoration: none;
@@ -31,9 +39,13 @@ ul{
     h3{
         font-size: 1.5rem;
     }
+    #i3{
+        font-size: 1.5rem;
+    }
+    
 }
 
-/* --------------nav-section---------------------- */
+/* ------------------------nav-section---------------------- */
 .nav-section{
 
     padding: 2em 2em;
@@ -84,7 +96,7 @@ ul{
     background-color: #ee7155;
     
     
-    font-size: 2rem;
+    /* font-size: 2rem; */
     
     padding: 0.4em 0.4em;
 }
@@ -94,16 +106,20 @@ ul{
         background-color: pink;
     } */
     h1{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     h2{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
     h3{
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
     h1,h2,h3,a{
         color: white;
+    }
+    p{
+        font-size: 0.7rem;
+        /* line-height: 1em; */
     }
     #i3{
         
@@ -126,5 +142,132 @@ ul{
     }
     .navbar-nav{
         width: 80%;
+    }
+}
+
+
+/* ----------------------------about me --------------------------------- */
+.about-me-section{
+    margin-top: 6em;
+}
+.heading{
+    color: black;
+    margin-bottom: 0.2em;
+}
+.sub-heading{
+    background-color: #f45f3d;
+    font-weight: 300;
+    padding: 0.3em 0.5em;
+    margin-bottom: 1.2em;
+}
+.content{
+    width: 50%;
+}
+.about-me{
+    width: 90%;
+    margin: auto;
+}
+.my-img{
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    background-color: aqua;
+    height: 50vh;
+    overflow: hidden;
+    
+}
+
+@media screen and (max-width:750px) {
+    .my-img{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+   
+}
+@media screen and (max-width:950px) {
+    
+}
+
+/*--------------------------skill section --------------------*/
+
+.skills{
+    background-color: black;
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+    margin-top: 4em;
+    border-radius: 10px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 20% 80%;
+}
+.skills-heading{
+    grid-column-start: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills h4{
+    line-height: 2.2em;
+}
+@media screen and (max-width:750px) {
+    
+    .skills{
+        width: 90%;
+        height: 50vh;
+    }
+    h4{
+        font-size: 1rem;
+    }
+}
+
+
+/*------------------------ projects ----------------------------*/
+
+.project-section{
+    background-color:rgb(224, 242, 244);
+    margin-top: 4em;
+    padding: 4em 0;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: aut0 aut0;
+    /* column-gap: 3%; */
+    
+    row-gap: 50px;
+    justify-content: space-evenly;
+    
+}
+
+.tenzies,.zomato,.netflix,.weather{
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.project-section h2{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.project-section{
+    text-align: center;
+}
+.project-content{
+    margin-top: 2em;
+}
+.project-img{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:750px) {
+    .projects{
+        grid-template-columns: 80vw;
     }
 }
